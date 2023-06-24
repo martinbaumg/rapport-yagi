@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{r1}
+https://www.electronique-radioamateur.fr/radio/antenne/antenne yagi.php.
+
+\bibitem{r2}
+S.~M. Marc~Hummel, Le gain d'une antenne yagi-uda, https://f5zv.pagesperso-orange.fr/RADIO/RM/RM08/RM08y/RM08y03.html (2015).
+
+\end{thebibliography}

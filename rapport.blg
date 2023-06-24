@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: rapport.aux
+The style file: elsarticle-num.bst
+Database file #1: rapport.bib
+Warning--empty title in r1
+Warning--empty journal in r1
+Warning--empty year in r1
+You've used 2 entries,
+            2952 wiz_defined-function locations,
+            676 strings with 5282 characters,
+and the built_in function-call counts, 397 in all, are:
+= -- 25
+> -- 8
+< -- 0
++ -- 4
+- -- 2
+* -- 15
+:= -- 74
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 14
+empty$ -- 50
+format.name$ -- 2
+if$ -- 96
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 14
+num.names$ -- 2
+pop$ -- 15
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 0
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 2
+width$ -- 3
+write$ -- 20
+(There were 3 warnings)
