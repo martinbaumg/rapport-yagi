@@ -6,45 +6,45 @@ Database file #1: rapport.bib
 Warning--empty title in r1
 Warning--empty journal in r1
 Warning--empty year in r1
-You've used 2 entries,
+You've used 4 entries,
             2952 wiz_defined-function locations,
-            676 strings with 5282 characters,
-and the built_in function-call counts, 397 in all, are:
-= -- 25
-> -- 8
+            686 strings with 5563 characters,
+and the built_in function-call counts, 781 in all, are:
+= -- 61
+> -- 16
 < -- 0
-+ -- 4
-- -- 2
-* -- 15
-:= -- 74
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 1
++ -- 8
+- -- 4
+* -- 23
+:= -- 132
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 3
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 14
-empty$ -- 50
-format.name$ -- 2
-if$ -- 96
+cite$ -- 7
+duplicate$ -- 28
+empty$ -- 102
+format.name$ -- 4
+if$ -- 206
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 14
-num.names$ -- 2
-pop$ -- 15
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 20
+num.names$ -- 4
+pop$ -- 27
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 32
+skip$ -- 68
 stack$ -- 0
 substring$ -- 0
-swap$ -- 1
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 2
-width$ -- 3
-write$ -- 20
+while$ -- 4
+width$ -- 5
+write$ -- 36
 (There were 3 warnings)

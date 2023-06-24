@@ -6,8 +6,12 @@
 \usepackage{listings}
 \usepackage{geometry}
 \usepackage{pgfplots}
+
+\usepgfplotslibrary{polar}
+\pgfplotsset{compat=1.12} 
+
 \pgfplotsset{width=10cm,compat=1.9}
-% \usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \lhead{}
@@ -38,6 +42,7 @@
 \end{titlepage}
 \newpage
 \tableofcontents
+\listoffigures
 \newpage
 \section{Introduction}
 \subsection{Définition}
@@ -125,17 +130,20 @@ utilisations :\\
 
 \newpage
 \subsection{Gain et directivité}
-Le gain d'une antenne varie doit varier en fonction 
+Le gain d'une antenne varie en fonction 
 du nombre d'éléments qui la compose. En effet, plus
 il y a d'éléments, plus le gain est important mais arrivé
 à un certain point, le gain ne varie plus. Comme nous 
 pouvons le voir ci-dessous, arrivé aux alentours 
 de 20 élements on se rend compte que le gain commence
 à stagner tout doucement. Il faut savoir adapter le nombre 
-d'élements en fonction de ses besoins car \\ 
+d'élements en fonction de ses besoins car cela va venir jouer
+sur la directivité du signal. Plus il y a d'éléments directeurs
+plus on va venir concentrer l'énégie émise et donc, nous serons
+plus précis, et donc la fréquence choisie peut être plus 
+précise. À contrario la largeur de bande sera donc réduite.  \\ 
 
-
-\begin{figure}
+\begin{figure}[h]
     \centering
     \begin{tikzpicture}
         \begin{axis}[	grid= major ,
@@ -149,14 +157,150 @@ d'élements en fonction de ses besoins car \\
             \addplot coordinates {(2, 6) (3, 8) (4, 9) (5, 10) (6, 11) (7, 12) (8, 13) (9, 13) (10, 14) (12, 14) (14, 15) (16, 15) (18, 16) (20, 16) (22, 17) (24, 17)}; % Tracé point à point
         \end{axis}
     \end{tikzpicture}
-    \caption{Gain en fonction du nombre d'éléments \cite{r2}}
+    \caption{Gain en fonction du nombre d'éléments}
+\end{figure}
+
+\newpage
+Le nombre d'éléments et le gain est directement correlé 
+à la longueur totale du boom. Ce dernier répresente la partie
+centrale de l'antenne, c'est sur cette partie que l'on va venir
+fixer tous les éléments de l'antenne Yagi perpendiculairement au boom.\\
+
+Sur le tableau qui suit nous pouvons nous rendre compte
+de la liaison direct entre le nombre d'éléments et la longueur
+du boom.\\
+
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Nombre d'éléments & Longueur du boom & Gain \\
+        \hline
+        2 & 0,4 $\lambda$ & 6 dBi \\
+        \hline
+        3 & 0,7 $\lambda$ & 8 dBi \\
+        \hline
+        4 & 1,1 $\lambda$ & 9 dBi \\
+        \hline
+        5 & 1,4 $\lambda$ & 10 dBi \\
+        \hline
+        6 & 1,8 $\lambda$ & 11 dBi \\
+        \hline
+        7 & 2,1 $\lambda$ & 12 dBi \\
+        \hline
+        8 & 2,5 $\lambda$ & 13 dBi \\
+        \hline
+        9 & 2,8 $\lambda$ & 13 dBi \\
+        \hline
+        10 & 3,2 $\lambda$ & 14 dBi \\
+        \hline
+        12 & 3,9 $\lambda$ & 14 dBi \\
+        \hline
+        14 & 4,6 $\lambda$ & 15 dBi \\
+        \hline
+        16 & 5,3 $\lambda$ & 15 dBi \\
+        \hline
+        18 & 6 $\lambda$ & 16 dBi \\
+        \hline
+        20 & 6,7 $\lambda$ & 16 dBi \\
+        \hline
+        22 & 7,4 $\lambda$ & 17 dBi \\
+        \hline
+        24 & 8,1 $\lambda$ & 17 dBi \\
+        \hline
+    \end{tabular}
+    \caption{Corrélation entre le nombre d'éléments, gain et longueur du boom \cite{r2}}
+    \label{fig:tableau}
 \end{figure}
 
 
+\newpage
 \section{État de l'art des antennes Yagi}
-\subsection{Principes de base}
+\subsection{Fonctionnement}
+L'antenne Yagi est une antenne directive 
+utilisée pour la réception de signaux radio et les 
+communications sans fil. Elle est constituée d'un 
+dipôle, d'un réflecteur et de directeurs. Les ondes 
+radio sont propagées par le dipôle. En avant du 
+dipôle, les directeurs concentrent l'énergie dans la 
+direction désirée, créant ainsi le lobe principal de 
+rayonnement. Le réflecteur à l'arrière du dipôle réduit 
+la directivité de l'antenne en réfléchissant les ondes 
+émises. Pour garantir une performance optimale, les 
+dimensions des éléments sont soigneusement calculées en 
+fonction de la fréquence voulu. En combinant ces 
+composants et leur positionnement de manière approprié, l'antenne 
+Yagi peut concentrer l'énergie rayonnée dans une 
+direction spécifique, ce qui permet un gain élevé et 
+une réception et une transmission améliorées dans 
+cette direction.
+
+Voici le diagramme 3D de propagation des ondes 
+d'une antenne Yagi, on peut voir que les ondes sont
+concentrées dans une direction précise.\\
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{img/pattern.png}
+    \caption{Diagramme 3D de propagation des ondes \cite{r4}}
+    \label{fig:3d}
+\end{figure}
+
 
 \subsection{Avantages et limitations}
+Les avantages d'une antenne Yagi sont nombreux. Sa directivité
+permet de concentrer l'énergie dans une direction précise, 
+et donc, une communication sélective. Sa directivité
+permet également d'avoir un gain plus élevé que les
+antennes omnidirectionnelles. De plus, les antennes 
+Yagi sont facilement concevable comme nous le verrons 
+dans une partie après, ce qui la rend donc réalisable
+par les radioamateurs.\\
+
+Bien que l'antenne Yagi possède de nombreux avantages, ces derniers
+peuvent se transformer en inconvénients. En effet, la directivité de l'antenne
+lui permet de concentrer l'énergie dans une direction
+précise, mais cela implique que l'antenne doit être
+orientée dans la direction voulue. De plus, la directivité
+de l'antenne implique que la communication ne peut se faire
+que dans une direction précise, ce qui peut être un inconvénient
+dans certains cas. Dans le cas où nous voudrions fabriquer
+une antenne Yagi, il faut être précis et rigoureux dans
+les calculs, car la moindre erreur peut avoir un impact. 
+Enfin, une antenne Yagi maison sera limité à donc une
+largeur de bande, il faudra donc construire plusieurs antennes
+si l'on souhaite communiquer sur plusieurs fréquences.\\
+
+\subsection{Une antenne en constante évolution}
+L'antenne Yagi est en constante évolution, elle reste 
+une des plus utilisées dans le monde est 
+est améliorée de jour en jour. En effet, de nombreux 
+domaines en ont besoin et sont donc améliorées en
+fonction des usages requis.\\
+
+De nos jours plusieurs méthodes de simulation
+sont utilisées pour améliorer les antennes Yagi à moindre
+coût. La méthode des éléments finis est la plus utilisée
+car elle permet de simuler le comportement de l'antenne
+en fonction d'une mutlitude de paramètres. Cette méthode 
+"permet de vérifier l'adéquation de produits 
+numériquement avant même leur construction[...]" \cite{r3}.
+Cette méthode est particulièrement adaptée pour 
+résoudre des problèmes complexes avec des matériaux 
+hétérogènes.\\
+
+Les matérieux utilisés sont eux aussi en constante 
+évolution. Désormais, de plus en plus d'aluminium 
+est préconisé pour offrir une meilleure résistance 
+aux intempéries et offre un gain de poids non négligeable.\\
+
+Pour finir, les antennes Yagi sont devenu polyvalentes.
+En effet, celles que l'on retrouve dans le commerce
+sont désormais multi-bandes. Cela permet de couvrir
+plusieurs fréquences avec une seule antenne. L'ajout
+de communutateurs d'alimentation permet de choisir
+la fréquence que l'on souhaite utiliser.\\
+
 
 
 

@@ -1,17 +1,18 @@
 \babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{2}{}%
-\contentsline {subsection}{\numberline {1.1}Définition}{2}{}%
-\contentsline {subsection}{\numberline {1.2}Présentation}{3}{}%
-\contentsline {section}{\numberline {2}Caractéristiques et propriétés des antennes Yagi}{3}{}%
-\contentsline {subsection}{\numberline {2.1}Fréquences et largeur de bande}{3}{}%
-\contentsline {subsection}{\numberline {2.2}Gain et directivité}{4}{}%
-\contentsline {section}{\numberline {3}État de l'art des antennes Yagi}{5}{}%
-\contentsline {subsection}{\numberline {3.1}Principes de base}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Avantages et limitations}{5}{}%
-\contentsline {section}{\numberline {4}Fabrication d'une antenne YAGI}{5}{}%
-\contentsline {subsection}{\numberline {4.1}Logiciels de conception et de simulation}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Formules et équations utiles pour le dimensionnement}{5}{}%
-\contentsline {subsection}{\numberline {4.3}Outils et matériaux nécessaires}{5}{}%
-\contentsline {subsection}{\numberline {4.4}Fabrication de l'antenne - étapes par étapes}{5}{}%
-\contentsline {subsection}{\numberline {4.5}Exemples de projets de fabrication d'antennes Yagi}{5}{}%
-\contentsline {section}{\numberline {5}Conclusion}{5}{}%
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Définition}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Présentation}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Caractéristiques et propriétés des antennes Yagi}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Fréquences et largeur de bande}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Gain et directivité}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}État de l'art des antennes Yagi}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Fonctionnement}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Avantages et limitations}{7}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Une antenne en constante évolution}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Fabrication d'une antenne YAGI}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Logiciels de conception et de simulation}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Formules et équations utiles pour le dimensionnement}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Outils et matériaux nécessaires}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Fabrication de l'antenne - étapes par étapes}{8}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Exemples de projets de fabrication d'antennes Yagi}{8}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}%
