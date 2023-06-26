@@ -50,7 +50,7 @@ L'antenne Yagi est un type d'antenne directive utilisée
 pour la réception et la transmission de signaux radio. 
 Elle se compose de trois principaux éléments. Un reflecteur,
 placé à l'opposé du sens de propagation, au milieu, 
-un dipôle, puis un reflecteur qui lui permet d'orienter
+un dipôle, puis un direecteur qui lui permet d'orienter
 le signal.\\
 
 Voici un schéma réprésentatif d'une antenne Yagi :
@@ -176,37 +176,35 @@ du boom.\\
         \hline
         Nombre d'éléments & Longueur du boom & Gain \\
         \hline
-        2 & 0,4 $\lambda$ & 6 dBi \\
+        3 & 0,4 $\lambda$ & 6 dBi \\
         \hline
-        3 & 0,7 $\lambda$ & 8 dBi \\
+        4 & 0,7 $\lambda$ & 8 dBi \\
         \hline
-        4 & 1,1 $\lambda$ & 9 dBi \\
+        5 & 1,1 $\lambda$ & 9 dBi \\
         \hline
-        5 & 1,4 $\lambda$ & 10 dBi \\
+        6 & 1,4 $\lambda$ & 10 dBi \\
         \hline
-        6 & 1,8 $\lambda$ & 11 dBi \\
+        7 & 1,8 $\lambda$ & 11 dBi \\
         \hline
-        7 & 2,1 $\lambda$ & 12 dBi \\
+        8 & 2,1 $\lambda$ & 12 dBi \\
         \hline
-        8 & 2,5 $\lambda$ & 13 dBi \\
+        9 & 2,5 $\lambda$ & 13 dBi \\
         \hline
-        9 & 2,8 $\lambda$ & 13 dBi \\
+        10 & 2,8 $\lambda$ & 13 dBi \\
         \hline
-        10 & 3,2 $\lambda$ & 14 dBi \\
+        12 & 3,2 $\lambda$ & 14 dBi \\
         \hline
-        12 & 3,9 $\lambda$ & 14 dBi \\
+        14 & 3,9 $\lambda$ & 14 dBi \\
         \hline
-        14 & 4,6 $\lambda$ & 15 dBi \\
+        16 & 4,6 $\lambda$ & 15 dBi \\
         \hline
-        16 & 5,3 $\lambda$ & 15 dBi \\
+        18 & 5,3 $\lambda$ & 15 dBi \\
         \hline
-        18 & 6 $\lambda$ & 16 dBi \\
+        20 & 6 $\lambda$ & 16 dBi \\
         \hline
-        20 & 6,7 $\lambda$ & 16 dBi \\
+        22 & 6,7 $\lambda$ & 16 dBi \\
         \hline
-        22 & 7,4 $\lambda$ & 17 dBi \\
-        \hline
-        24 & 8,1 $\lambda$ & 17 dBi \\
+        24 & 7,4 $\lambda$ & 17 dBi \\
         \hline
     \end{tabular}
     \caption{Corrélation entre le nombre d'éléments, gain et longueur du boom \cite{r2}}
@@ -275,7 +273,7 @@ si l'on souhaite communiquer sur plusieurs fréquences.\\
 L'antenne Yagi est en constante évolution, elle reste 
 une des plus utilisées dans le monde est 
 est améliorée de jour en jour. En effet, de nombreux 
-domaines en ont besoin et sont donc améliorées en
+domaines en ont besoin et est donc améliorée en
 fonction des usages requis.\\
 
 De nos jours plusieurs méthodes de simulation
@@ -287,12 +285,12 @@ en fonction d'une mutlitude de paramètres. Cette méthode
 numériquement avant même leur construction[...]" \cite{r3}.
 Cette méthode est particulièrement adaptée pour 
 résoudre des problèmes complexes avec des matériaux 
-hétérogènes.\\
+hétérogènes.
 
 Les matérieux utilisés sont eux aussi en constante 
 évolution. Désormais, de plus en plus d'aluminium 
 est préconisé pour offrir une meilleure résistance 
-aux intempéries et offre un gain de poids non négligeable.\\
+aux intempéries et offre un gain de poids non négligeable.
 
 Pour finir, les antennes Yagi sont devenu polyvalentes.
 En effet, celles que l'on retrouve dans le commerce
@@ -306,23 +304,198 @@ la fréquence que l'on souhaite utiliser.\\
 
 
 \section{Fabrication d'une antenne YAGI}
+Réaliser une antenne Yagi est tout à fait possible, chez 
+soit, en utilisant des matérieux de tous les jours. 
+Nous allons voir ci-après les étapes à suivre 
+pour fabriquer une antenne Yagi maison que l'on 
+pourrait utiliser pour la recherche de balise. Sa 
+fréquence de reception sera de 121Mhz, et son coût 
+une trentaine d'euros. Notre antenne sera constituée
+de 3 éléments, un dipôle, un réflecteur et un directeur.
+Pour concevoir cette antenne je me suis inspiré et aidé
+de l'internaute \textbf{Hugues F4GSN} de la page 
+\textbf{Radioamateurs du Haut-Rhin} \cite{r5}.
 \subsection{Logiciels de conception et de simulation}
+Il existe de nombreux logiciels de conception et de
+simulation d'antennes Yagi. Pour essayer notre 
+projet et le valider avant de l'essayer nous pouvons 
+utiliser \textbf{4NEC2} qui est gratuit et nécessite 
+windows. Vu la simplicité de notre antenne, nous
+n'avons pas besoin d'utiliser de logiciel de simulation.\\
+
+J'utiliserai cependant un calculateur en ligne \textbf{Yagi Calculator}
+qui permet de me donner la longueur du boom, du directeurs 
+et de tous les autres éléments de mon antenne. Grâce 
+à ce calculateur, je pourrai vérifier mes calculs comme 
+nous le verrons ci-après.
 
 \subsection{Formules et équations utiles pour le dimensionnement}
+Pour concevoir notre antenne il faut calculer 
+les dimensions des éléments. Pour cela nous allons 
+commencer par calculer la longueur d'onde de notre
+antenne. Pour cela nous utilisons la formule suivante :\\
+
+\begin{equation}
+    \lambda = \frac{c}{f}
+    = \frac{3*10^8}{121*10^6}
+    = 2.47m
+\end{equation}
+
+\newpage
+Une fois notre longueur d'onde trouvé, nous pouvons 
+pouvons en déduire la longueur approximative du boom 
+de notre antenne. Pour ce faire, nous prenons juste 
+mon tableau d'avant, et nous voyons que pour 3 élements
+nous divisons d'à peu près 25\% la longueur d'onde. Nous obtenons
+donc une longueur de boom de 801mm.\\
+Ce calcul est vérifié par le calculateur en ligne 
+\textbf{Yagi Calculator} :
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/calc.png}
+    \caption{Calcul des dimensions de l'antenne}
+    \label{fig:calcul}
+\end{figure}
+
+Nous retrouvons à peu près les mêmes valeurs sur le schéma
+de l'internaute Hugues :
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/boom.png}
+    \caption{Schéma de l'antenne Yagi selon \textbf{Hugues F4GSN}}
+    \label{fig:antenne}
+\end{figure}
 
 \subsection{Outils et matériaux nécessaires}
+Pour réaliser cette antenne il faut se munir 
+du matériel suivant :\\
+\begin{itemize}
+    \item 1m de tube PVC pression DN20 diamètre extérieur 25mm
+    \item 1 Té PVC pression DN20 diamètre intérieur 25mm
+    \item 2 croix PVC pression DN20 diamètre intérieur 25mm
+    \item 0,13m de fil de cuivre nu 1,5 mm² pour faire l’épingle
+    \item 3,55m de ruban métallique largeur 25mm (type mètre ruban)
+    \item 2m de câble coaxial RG-58 avec fiche selon besoin PL/N/SMA/BNC…
+    \item Visserie inox, écrous,rondelles grower (pour les vis 3×15mm ou 3×20mm)
+    \item 4 cosses à souder pour la connexion du câble coaxial et de l’épingle
+\end{itemize}
 
-\subsection{Fabrication de l'antenne - étapes par étapes}
 
+\subsection{Fabrication de l'antenne}
+\subsubsection{Le boom}
+Pour construire l'antenne il faut venir respecter les 
+longueur de coupes indiqués sur le schéma fourni 
+au milimètre près. Voici les dimensions à respecter 
+du tube PVC pour constituer le boom :\\
+\begin{itemize}
+    \item 1 tube DN20 de 339mm
+    \item 1 tube DN20 de 222mm
+    \item 1 tube DN20 de 200mm
+\end{itemize}
+\subsubsection{Les éléments}
+Pour les éléments, il faut venir découper le ruban
+métallique en fonction des dimensions suivantes :\\
+\begin{itemize}
+    \item 1 réflecteur de 1266mm
+    \item 1 dipôle de 1185mm
+    \item 1 directeur de 1080mm
+\end{itemize}
+
+\subsubsection{L'épingle}
+Pour réaliser l'épingle, il faut installer l'élément le plus
+important de l'antenne. Il faut se munir d'un câble 
+coaxial de 2m et venir le dénuder sur 10cm. Nous allons 
+venir le fixer sur le dipôle à l'aide d'une épingle
+en cuivre. Pour cela, il faut venir couper un fil de
+cuivre en respectant les valeurs énnoncées un peu plus 
+tôt. Ensuite, nous viendrons souder les cosses sur le câble
+coaxial et sur l'épingle. Pour finir,
+fixerons l'épingle sur le dipôle à l'aide de vis et de
+rondelles. Voici le résultat final :\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{img/dipole.png}
+    \caption{Epingle sur le dipôle \cite{r5}}
+    \label{fig:epingle}
+\end{figure}
+
+\subsubsection{Le montage}
+Pour finir, il suffit d'assembler tous les éléments
+en veillant à le câble sur un analyseur d'antenne.
+Voici le résultat final par l'internaute Hugues :\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/fin.png}
+    \caption{Antenne Yagi 3 éléments \cite{r5}}
+    \label{fig:fin}
+\end{figure}
+
+\newpage
 \subsection{Exemples de projets de fabrication d'antennes Yagi}
+Comme énnoncé tout au long de ce devoir, il existe
+de nombreuses utilisations possibles pour les antennes 
+Yagi. Voici quelques exemples de réalisations que 
+j'ai pour trouvé. 
+\subsubsection*{Antenne Yagi 4 éléments 100Mhz}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/antenne-4.jpg}
+    \caption{Antenne Yagi 4 éléments \cite{r6}}
+    \label{fig:antenn}
+\end{figure}
 
-
+\subsubsection*{Antenne 2,4GHz pouvant être utilisé pour amplifié le signal Wi-Fi}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{img/ant-wifi.jpg}
+    \caption{Antenne Yagi Wi-Fi \cite{r7}}
+    \label{fig:wifi}
+\end{figure}
 
 
 
 
 \section{Conclusion}
+En definitive, nous avons pu voir au travers 
+de ce devoir que les antennes Yagi sont des
+antennes très polyvalentes. Elles peuvent être
+utilisées pour de nombreuses applications.\\
 
+Nous avons abordé l'état de l'art des antennes Yagi, 
+révélant leur fonctionnement interne et leur 
+évolution continue pour répondre aux demandes 
+croissantes des utilisateurs. Nous avons souligné 
+ses avantages, tels que leur facilité de fabrication, 
+leur efficacité et leur polyvalence, tout en 
+mentionnant également certaines limitations, 
+telles que la sensibilité aux conditions 
+environnementales et la nécessité d'un réglage très précis.
+
+En ce qui concerne la fabrication des antennes Yagi, 
+nous avons exploré à travers un cas 
+concret, comment construire facilement une antenne,
+en mettant l'accent sur des méthodes 
+accessibles et des composants disponibles dans les 
+centres de bricolage.
+
+Enfin, nous avons entrevu différents projets 
+amateurs de fabrication d'antennes Yagi, 
+démontrant des différentes utilisations qu'elles permettent, 
+même fait maison.\\
+
+En somme, les antennes Yagi continuent de jouer un 
+rôle important dans le domaine des communications, 
+offrant une solution pratique et efficace pour des 
+applications variées. Leur conception et leur 
+fabrication peuvent être abordées avec les bons 
+outils, les connaissances appropriées et une approche 
+créative, permettant aux passionnés d'explorer et 
+d'exploiter les avantages de ces antennes dans leurs 
+propres projets de recherche.
+
+
+
+\newpage
 \bibliographystyle{elsarticle-num}
 \bibliography{rapport.bib}
 

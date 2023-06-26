@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.23)  24 JUN 2023 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.23)  26 JUN 2023 11:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -614,12 +614,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--55
 
  []
 
-<img/yagi.jpg, id=126, 218.31563pt x 207.02344pt>
+<img/yagi.jpg, id=165, 218.31563pt x 207.02344pt>
 File: img/yagi.jpg Graphic file (type jpg)
 <use img/yagi.jpg>
 Package pdftex.def Info: img/yagi.jpg  used on input line 59.
 (pdftex.def)             Requested size: 209.12683pt x 198.31061pt.
-<img/trombone-yagi.jpg, id=129, 202.50656pt x 47.42719pt>
+<img/trombone-yagi.jpg, id=168, 202.50656pt x 47.42719pt>
 File: img/trombone-yagi.jpg Graphic file (type jpg)
 <use img/trombone-yagi.jpg>
 Package pdftex.def Info: img/trombone-yagi.jpg  used on input line 66.
@@ -660,72 +660,145 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--172
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 238--241
+Underfull \hbox (badness 10000) in paragraph at lines 236--239
 
  []
 
-<img/pattern.png, id=154, 664.73344pt x 503.63156pt>
+<img/pattern.png, id=194, 664.73344pt x 503.63156pt>
 File: img/pattern.png Graphic file (type png)
 <use img/pattern.png>
-Package pdftex.def Info: img/pattern.png  used on input line 244.
+Package pdftex.def Info: img/pattern.png  used on input line 242.
 (pdftex.def)             Requested size: 376.42575pt x 285.19788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--259
+Underfull \hbox (badness 10000) in paragraph at lines 249--257
 
  []
 
 [6 <./img/pattern.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 260--273
+Underfull \hbox (badness 10000) in paragraph at lines 258--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--280
+Underfull \hbox (badness 10000) in paragraph at lines 273--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--291
+Underfull \hbox (badness 10000) in paragraph at lines 295--301
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 319--325
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--296
+Underfull \hbox (badness 10000) in paragraph at lines 333--337
+
+ []
+
+[8]
+<img/calc.png, id=218, 342.27875pt x 305.14pt>
+File: img/calc.png Graphic file (type png)
+<use img/calc.png>
+Package pdftex.def Info: img/calc.png  used on input line 355.
+(pdftex.def)             Requested size: 209.12683pt x 186.43776pt.
+<img/boom.png, id=219, 1054.53975pt x 623.32875pt>
+File: img/boom.png Graphic file (type png)
+<use img/boom.png>
+Package pdftex.def Info: img/boom.png  used on input line 364.
+(pdftex.def)             Requested size: 292.77629pt x 173.05661pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--372
+
+ []
+
+[9 <./img/calc.png> <./img/boom.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 386--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--303
+Underfull \hbox (badness 10000) in paragraph at lines 396--398
 
  []
 
-[7] (./rapport.bbl
+<img/dipole.png, id=225, 639.38875pt x 470.75874pt>
+File: img/dipole.png Graphic file (type png)
+<use img/dipole.png>
+Package pdftex.def Info: img/dipole.png  used on input line 417.
+(pdftex.def)             Requested size: 292.77629pt x 215.56036pt.
+[10{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<img/fin.png, id=233, 639.38875pt x 470.75874pt>
+File: img/fin.png Graphic file (type png)
+<use img/fin.png>
+Package pdftex.def Info: img/fin.png  used on input line 428.
+(pdftex.def)             Requested size: 209.12683pt x 153.9717pt.
+ [11 <./img/dipole.png> <./img/fin.png>]
+<img/antenne-4.jpg, id=242, 194.7275pt x 260.47313pt>
+File: img/antenne-4.jpg Graphic file (type jpg)
+<use img/antenne-4.jpg>
+Package pdftex.def Info: img/antenne-4.jpg  used on input line 442.
+(pdftex.def)             Requested size: 209.12683pt x 279.74481pt.
+<img/ant-wifi.jpg, id=245, 448.074pt x 151.0443pt>
+File: img/ant-wifi.jpg Graphic file (type jpg)
+<use img/ant-wifi.jpg>
+Package pdftex.def Info: img/ant-wifi.jpg  used on input line 450.
+(pdftex.def)             Requested size: 209.12683pt x 70.4976pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 459--463
+
+ []
+
+[12 <./img/antenne-4.jpg> <./img/ant-wifi.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 481--485
+
+ []
+
+[13] (./rapport.bbl
+Underfull \hbox (badness 5519) in paragraph at lines 18--19
+[]\T1/cmr/m/n/12 Hugues, Constuire son an-tenne yagi pour la re-cherche de ba-lises,
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\T1/cmr/m/n/12 https ://www.ref68.com/construire-son-antenne-yagi-pour-la-recherche-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+[]\T1/cmr/m/n/12 Anonyme, An-tenne yagi wi-fi 2,4 ghz fa-cile à construire,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 []\T1/cmr/m/n/12 G. Muel-ler, L'ori-gine de la mé-thode des élé-ments fi-nis,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
 \T1/cmr/m/n/12 https ://www.cadfem.net/fr/fr/cadfem-informe/media-center/cadfem-
  []
 
-) [8] (./rapport.aux)
+) [14] (./rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 6A0E58BF8FB791E8202B90D0A5C3BAB5;3557.
+(rerunfilecheck)             Checksum: 0D8C8D1937D98F996C23CC694EAB2FE0;3919.
  ) 
 Here is how much of TeX's memory you used:
- 34437 strings out of 476025
- 798032 string characters out of 5790017
+ 34522 strings out of 476025
+ 799314 string characters out of 5790017
  1868388 words of memory out of 5000000
- 54352 multiletter control sequences out of 15000+600000
- 522353 words of font info for 51 fonts, out of 8000000 for 9000
+ 54407 multiletter control sequences out of 15000+600000
+ 522690 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,19n,103p,745b,2347s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on rapport.pdf (9 pages, 283136 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfcc2074.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on rapport.pdf (15 pages, 3659268 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 164 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 339 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
